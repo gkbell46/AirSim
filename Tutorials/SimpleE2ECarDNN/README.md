@@ -1,4 +1,4 @@
-# Autonomous Driving using End-to-End Deep Learning: A tutorial
+# Autonomous Driving using End-to-End Supervised Learning: A tutorial
 
 ### Authors:
 
@@ -6,11 +6,11 @@
 
 **[Aditya Sharma](https://www.linkedin.com/in/adityasharmacmu/)**, Program Manager, Microsoft
 
-This tutorial has been developed and maintained by the Microsoft Deep Learning and Robotics Garage Chapter
+*(This tutorial has been developed and maintained by the Microsoft Deep Learning and Robotics Garage Chapter)*
 
 ## Overview
 
-End-to-end deep learning is a modeling strategy that is a response to the success of deep neural networks. Unlike traditional Machine Learning and Computer Vision, this strategy is not built on feature engineering. Instead, it leverages the power of deep neural networks, along with recent hardware advances (GPUs, FPGAs etc.) to harness the incredible potential of large amounts of data. It is closer to a human-like learning approach than traditional ML as it lets the neural network map raw input to direct outputs. The only downside to this approach is that it requires a large amount of training data which makes it unsuitable for many common applications. Since simulators can generate an infinite amount of data, they are the perfect data source for end-to-end deep learning algorithms.
+End-to-end deep learning is a modeling strategy that is a response to the success of deep neural networks. Unlike traditional Machine Learning and Computer Vision, this strategy is not built on feature engineering. Instead, it leverages the power of deep neural networks, along with recent hardware advances (GPUs, FPGAs etc.) to harness the incredible potential of large amounts of data. It is closer to a human-like learning approach than traditional ML as it lets the neural network map raw input to direct outputs. The only downside to this approach is that it requires a large amount of training data which makes it unsuitable for many common applications. Since simulators can generate an infinite amount of data, they are a perfect data source for end-to-end deep learning algorithms. If you wish to learn more about end-to-end deep learning, [this video](https://www.coursera.org/learn/machine-learning-projects/lecture/k0Klk/what-is-end-to-end-deep-learning) by Andrew Ng provides a nice overview of the topic.
 
 Autonomous driving is a field that can highly benefit from the power of end-to-end deep learning. In order to achieve SAE Level 4 Autonomy, cars need to be trained on data worth millions of miles driven, something that is virtually impossible without a simulator. Additionally, a majority of predictions tasks needed for autonomous driving are regression based, making it a perfect use case for end-to-end learning.
 
@@ -50,17 +50,11 @@ You should also be comfortable with Python. No programming expertise is necessar
 4. [Install Keras](https://keras.io/#installation)
 5. [Configure Keras backend](https://keras.io/backend/) to work with TensorFlow (default) or CNTK.
 
-```python
-pip install -r requirements.txt
-```
-
 #### Hardware
 
 It is highly recommended that a GPU is available for processing. While it is possible to train the model using just a CPU, it will take days to complete training. This tutorial was developed with a Nvidia GTX970 GPU, which resulted in a training time of ~45 minutes. 
 
-If you do not have a GPU available, you can spin up a [Deep Learning VM on Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.dsvm-deep-learning), which comes with all the dependencies and libraries installed (use the py35 environment if you decide to use this).
-
-It is recommended that you also have at least 10GB of disk space available for the datasets. 
+If you do not have a GPU available, you can spin up a [Deep Learning VM on Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.dsvm-deep-learning), which comes with all the dependencies and libraries installed (use the provided py35 environment if you decide to use this).
 
 #### Dataset
 
